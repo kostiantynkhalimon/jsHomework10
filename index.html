@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Custom Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <div class="slider__track" id="sliderTrack">
+          <div class="slider__slide">
+            <img
+              src="https://picsum.photos/seed/slide1/900/500"
+              alt="Слайд 1"
+              draggable="false"
+            />
+            <div class="slider__caption">
+              <h2>1. Океан</h2>
+              <p>Підтримує перемикання кнопками, клавіатурою та свайпами.</p>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img
+              src="https://picsum.photos/seed/slide2/900/500"
+              alt="Слайд 2"
+              draggable="false"
+            />
+            <div class="slider__caption">
+              <h2>2. Гірська дорога</h2>
+              <p>Спробуй перетягнути слайд мишкою вліво або вправо.</p>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img
+              src="https://picsum.photos/seed/slide3/900/500"
+              alt="Слайд 3"
+              draggable="false"
+            />
+            <div class="slider__caption">
+              <h2>3. Небо</h2>
+              <p>Використовуй стрілки ⬅️ та ➡️ на клавіатурі для навігації.</p>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img
+              src="https://picsum.photos/seed/slide4/900/500"
+              alt="Слайд 4"
+              draggable="false"
+            />
+            <div class="slider__caption">
+              <h2>4. Пляж</h2>
+              <p>
+                Клікни по індикаторах знизу для переходу до конкретного слайду.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="slider__btn slider__btn--prev"
+          id="prevBtn"
+          aria-label="Попередній слайд"
+        >
+          &#10094;
+        </button>
+        <button
+          class="slider__btn slider__btn--next"
+          id="nextBtn"
+          aria-label="Наступний слайд"
+        >
+          &#10095;
+        </button>
+
+        <div class="slider__indicators" id="indicators"></div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="control-btn" id="toggleAutoplayBtn">⏸ Пауза</button>
+        <span class="control-hint"
+          >Підказка: стрілки <b>← / →</b> гортають слайди, а мишкою можна
+          тягнути слайд</span
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
