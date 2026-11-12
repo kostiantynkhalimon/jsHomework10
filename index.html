@@ -1,87 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Custom Slider</title>
+    <title>JS Slider — ООП (Прототипи та Класи)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper" id="sliderWrapper">
       <div class="slider" id="slider">
         <div class="slider__track" id="sliderTrack">
           <div class="slider__slide">
             <img
-              src="https://picsum.photos/seed/slide1/900/500"
-              alt="Слайд 1"
-              draggable="false"
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+              alt="Гірський пейзаж"
             />
             <div class="slider__caption">
-              <h2>1. Океан</h2>
-              <p>Підтримує перемикання кнопками, клавіатурою та свайпами.</p>
+              <h2>Гірські вершини</h2>
+              <p>Велична природа та чисте повітря високо в горах.</p>
             </div>
           </div>
           <div class="slider__slide">
             <img
-              src="https://picsum.photos/seed/slide2/900/500"
-              alt="Слайд 2"
-              draggable="false"
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+              alt="Морський берег"
             />
             <div class="slider__caption">
-              <h2>2. Гірська дорога</h2>
-              <p>Спробуй перетягнути слайд мишкою вліво або вправо.</p>
+              <h2>Океанський бриз</h2>
+              <p>Безкрайній горизонт і теплий пісок під ногами.</p>
             </div>
           </div>
           <div class="slider__slide">
             <img
-              src="https://picsum.photos/seed/slide3/900/500"
-              alt="Слайд 3"
-              draggable="false"
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+              alt="Лісова стежка"
             />
             <div class="slider__caption">
-              <h2>3. Небо</h2>
-              <p>Використовуй стрілки ⬅️ та ➡️ на клавіатурі для навігації.</p>
+              <h2>Таємничий ліс</h2>
+              <p>Сонячні промені крізь густі крони дерев.</p>
             </div>
           </div>
           <div class="slider__slide">
             <img
-              src="https://picsum.photos/seed/slide4/900/500"
-              alt="Слайд 4"
-              draggable="false"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
+              alt="Нічне небо"
             />
             <div class="slider__caption">
-              <h2>4. Пляж</h2>
-              <p>
-                Клікни по індикаторах знизу для переходу до конкретного слайду.
-              </p>
+              <h2>Зоряна ніч</h2>
+              <p>Чумацький Шлях над засніженими хребтами.</p>
             </div>
           </div>
         </div>
-
-        <button
-          class="slider__btn slider__btn--prev"
-          id="prevBtn"
-          aria-label="Попередній слайд"
-        >
-          &#10094;
-        </button>
-        <button
-          class="slider__btn slider__btn--next"
-          id="nextBtn"
-          aria-label="Наступний слайд"
-        >
-          &#10095;
-        </button>
-
-        <div class="slider__indicators" id="indicators"></div>
-      </div>
-
-      <div class="slider-controls">
-        <button class="control-btn" id="toggleAutoplayBtn">⏸ Пауза</button>
-        <span class="control-hint"
-          >Підказка: стрілки <b>← / →</b> гортають слайди, а мишкою можна
-          тягнути слайд</span
-        >
+        <!-- Кнопки навигации, индикаторы и панель управления создаются через JS -->
       </div>
     </div>
 
